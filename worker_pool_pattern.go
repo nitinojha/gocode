@@ -9,7 +9,7 @@ import (
 
 //test
 func main() {
-	maxWorkers := 3
+	maxWorkers := 5
 	ctx := context.Background()
 
 	// initialise the worker pool setup
@@ -36,7 +36,7 @@ func main() {
 
 		h.Task <- task
 	}
-	time.Sleep(time.Second * 5)
+	time.Sleep(time.Second * 15)
 	fmt.Println("hotel is closed...!! see you tomorrow  ...!!!")
 
 }
