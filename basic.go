@@ -22,6 +22,20 @@ type Computer struct {
 }
 
 func main() {
+	var a = "intiial"
+	var b, c int = 10, 12
+	var d = true
+	e := "apple"
+	fmt.Println(a, b, c, d, e)
+	var h rune = 'b'
+	fmt.Printf("%d %d %s %s %d %c", b, c, a, e, d, h)
+	fmt.Println("")
+	fmt.Printf("%v \t %T \n", h, h)
+	fmt.Println("")
+
+	fmt.Printf("%v \t %T \n", d, d)
+	fmt.Println("")
+
 	var i int = 12
 	var j int8 = 127
 	var k string = strconv.Itoa(i)
